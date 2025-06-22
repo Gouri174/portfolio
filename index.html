@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#testimonials" class="nav-link">Feedbacks</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="static/profileportfolio.jpg" alt="Profile photo" class="profile-image" />
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Gouri Krishna R
+                    <h2 class="hero-title">Machine Learning Engineer (self-proclaimed)
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Data Science student from MS Ramaiah University of Applied Sciences with a passion for building AI solutions.
+                    </p>
+                    <p>
+                        I hold a Ph.D. in Computer Science with a focus on Machine Learning from Stanford University, 
+                        where I conducted research on computer vision and natural language processing.
+                    </p>
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Git & Github</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LLMs</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">PowerBI</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Web Scraping</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">HuggingFace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Machine Learning Educator</h3>
+                        <h4>Freelance</h4>
+                        <p class="timeline-date">Jan 2025 - Present</p>
+                        <p> Guided 7 students by transforming complex machine learning theories into digestible, practical knowledge through
+                             structured courses, hands-on projects, and real-world applications. With satisfaction rate of 98%.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Deep Learning Intern</h3>
+                        <h4>Bharat Electronics Ltd.</h4>
+                        <p class="timeline-date">Sept 2023 - Oct 2023</p>
+                        <p>Developed an Object Detection Software enhancing defense and surveillance capabilities and achieving 83% accuracy rate in object detection and classification. Executed fine-tuning strategies that improved model 
+                            performance by 15%.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern</h3>
+                        <h4>Skillvertex</h4>
+                        <p class="timeline-date">March 2022 - March 2023</p>    
+                        <p>Analyzed user data from 10,000+ customer interactions, generating insights that improved customer retention by 25%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/nutrib.jpg" alt="Nutribase project screenshot" class="project-screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nutribase</h3>
+                        <p>An AI-powered web application that provides personalized diet, restaurant, and workout recommendations based on user inputs.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nutribase-lilac.vercel.app/" class="project-link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Gouri174/Nutribase.git" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="dashboard-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>JobInsight</h3>
+                        <p>RESTful API for sentiment analysis using BERT and fine-tuned transformer models.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>BERT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="https://github.com/Gouri174/JobInsight.git" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="dashboard-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Honestly.ai</h3>
+                        <p>Hybrid recommendation system combining collaborative and content-based filtering for e-commerce.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="https://github.com/Gouri174/Honestly.ai.git" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <h2 class="section-title">Articles & Publications</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>EDA on Real World Data using the FRED API</h3>
+                        <p>Published in Medium</p>
+                        <a href="https://medium.com/@gourikrishna173/exploratory-data-analysis-on-real-world-data-using-the-fred-api-4b1c12d1071d" class="article-link">Read Article</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>NA</h3>
+                        <p>Published in NeurIPS 2022</p>
+                        <span class="article-date">December 2022</span>
+                        <a href="#" class="article-link">Read Article</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>NA</h3>
+                        <p>Published in ICML 2022</p>
+                        <span class="article-date">July 2022</span>
+                        <a href="#" class="article-link">Read Article</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Feedbacks</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I have known Gouri as an enterprising and a composed individual. She has demonstrated commitment and meticulousness while she pursued my course on Econometrics at the University. She is proactive, goal-oriented and embraces a forward thinking mindset. I wish her the very best."</p>
+                        <div class="testimonial-author">
+                            <h4>Dr.Rema Venkitaraman</h4>
+                            <span>Professor, MS Ramaiah University of Applied Sciences</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Learning Machine Learning under Ms.Gouri's guidance has been an incredible journey! Thank you for helping me understand concepts better by doing projects every week.
+                            (P.S. Still owe you for enduring my ‘What if’ rants and never letting me fake understanding!) 😅"</p>
+                        <div class="testimonial-author">
+                            <h4>Joseph Barnie</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="gourikrishna3771@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>gourikrishna3771@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gouri-krishna-180015243/" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Gouri174" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sarah Chen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
