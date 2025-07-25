@@ -20,7 +20,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#articles" class="nav-link">Articles</a></li>
-                <li><a href="#testimonials" class="nav-link">Feedbacks</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -36,11 +36,13 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-image">
-                    <img src="static/profileportfolio.jpg" alt="Profile photo" class="profile-image" />
+                    <img src="static\profileportfolio.jpg" alt="Profile photo" class="profile-image" />
                 </div>
                 <div class="hero-text">
                     <h1 class="hero-name">Gouri Krishna R
-                    <h2 class="hero-title">Machine Learning Engineer (self-proclaimed)
+                    <h2 class="hero-title">
+                        Machine Learning Engineer (in Training) <br>
+                        BSc(Hons with Research) Data Science & Analytics
                     
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -57,9 +59,6 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        I am a Final-Year Data Science student from MS Ramaiah University of Applied Sciences with a passion for building solutions.
-                    </p>
                     <p>
                         My journey with Data Science began in an unexpected realm—my mother's classroom. As a dedicated teacher who managed 362 students in total,
                          she faced intricate challenges in tracking and supporting student performance. Watching her struggle, I created a data-driven dashboard
@@ -85,6 +84,7 @@
                             <span class="skill-tag">Web Scraping</span>
                             <span class="skill-tag">Web Development</span>
                             <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Streamlit</span>
                             <span class="skill-tag">HuggingFace</span>
                         </div>
                     </div>
@@ -132,80 +132,152 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="static/nutrib.jpg" alt="Nutribase project screenshot" class="project-screenshot">
+    <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Existing Nutribase project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/nutrib.jpg" alt="Nutribase project screenshot" class="project-screenshot">
+                </div>
+                <div class="project-content">
+                    <h3>Nutribase</h3>
+                    <p>AI-driven web application that generates personalized diet plans, restaurant suggestions, and workout routines based on user profiles.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>LangChain</span>
+                        <span>Groq API</span>
+                        <span>Vercel</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Nutribase</h3>
-                        <p>An AI-powered web application that provides personalized diet, restaurant, and workout recommendations based on user inputs.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>OpenCV</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://nutribase-lilac.vercel.app/" class="project-link" target="_blank">Live Demo</a>
-                            <a href="https://github.com/Gouri174/Nutribase.git" class="project-link" target="_blank">GitHub</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://nutribase-lilac.vercel.app/" class="project-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Gouri174/Nutribase.git" class="project-link" target="_blank">GitHub</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="dashboard-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
+            </div>
+            
+            <!-- Existing JobInsight project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/jobinsight.jpg" alt="JobInsight project screenshot" class="project-screenshot">
+                </div>
+                <div class="project-content">
+                    <h3>Job Analyzer & Interview Prep</h3>
+                    <p>Automates job posting analysis and interview preparation. Helps you find the best job for you!</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Groq API (Llama-3)</span>
+                        <span>ChromaDB</span>
+                        <span>LangChain</span>
+                        <span>Gradio</span>
                     </div>
-                    <div class="project-content">
-                        <h3>JobInsight</h3>
-                        <p>Analyzes jobs and finds the best fit for you.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>BERT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="https://github.com/Gouri174/JobInsight.git" class="project-link">GitHub</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gouri174/JobInsight.git" class="project-link">GitHub</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="dashboard-placeholder">
-                            <i class="fas fa-robot"></i>
+            </div>
+            
+            <!-- Existing Honestly.ai project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/honestly.jpg" alt="Honestly.ai project screenshot" class="project-screenshot">
+                </div>
+                <div class="project-content">
+                    <h3>Honestly.ai</h3>
+                    <p>Multimodal AI Mental Health Support System with clinical psychology principles.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>HuggingFace</span>
+                        <span>LangChain</span>
+                        <span>GroqAPI (Llama-4-Scout/Whisper)</span>
+                        <span>ElevenlabsAPI</span>
+                        <span>Gradio</span>
+                        <span>JSON</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gouri174/Honestly.ai.git" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Existing BookRecommender project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/book.jpg" alt="BookRecommender project screenshot" class="project-screenshot">
+                </div>
+                <div class="project-content">
+                    <h3>BookRecommender</h3>
+                    <p>Book recommendation engine that combines semantic search with emotional tone analysis. The system processes natural language queries (e.g., "heartwarming family stories") and recommends books based on both thematic relevance and emotional resonance.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>KaggleHub</span>
+                        <span>Flask</span>
+                        <span>Vector Database</span>
+                        <span>NLP</span>
+                        <span>PyTorch</span>
+                        <span>HuggingFace Transformers</span>
+                        <span>LangChain</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gouri174/bookrecommender.git" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- New detailed project card (added as last item) -->
+            <div class="project-card detailed-card">
+                <div class="project-content">
+                    <h3>2D Bird Illustration Animation Suite</h3>
+                    <p class="project-description">
+                        An intuitive animation tool that brings 2D static bird illustrations to life with realistic motion effects.
+                    </p>
+                    
+                    <div class="project-media">
+                        <div class="media-item">
+                            <img src="static/phoenix1.jpg" alt="Recipe generator interface">
+                            <p class="media-description">A painting I did in 2024, of a Phoenix, having plumage of colors corresponding to fire and ashes</p>
+                        </div>
+                        
+                        <div class="media-item">
+                            <img src="static/enhancedimg_phoenix.webp" alt="Recipe suggestions">
+                            <p class="media-description">A digitally enhanced version of the Phoenix painting, showcasing its vibrant colors and details</p>
+                        </div>
+                        
+                        <div class="media-item">
+                            <img src="static/finalgifcrop.gif" alt="Recipe generator demo" class="gif-demo">
+                            <p class="media-description">Real-time animation demo of the Phoenix illustration</p>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Honestly.ai</h3>
-                        <p>AI Therapist with vision and voice.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>HuggingFace</span>
-                            <span>LangChain</span>
-                            <span>GroqAPI</span>
-                            <span>ElevenlabsAPI</span>
-                            <span>Gradio</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="https://github.com/Gouri174/Honestly.ai.git" class="project-link">GitHub</a>
-                        </div>
+                    
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Pillow</span>
+                        <span>Gradio</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Gouri174/AI-Recipe-Generator" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Articles Section -->
     <section id="articles" class="articles-section">
         <div class="container">
             <h2 class="section-title">Articles & Publications</h2>
             <div class="articles-grid">
+
                 <article class="article-card">
                     <div class="article-image">
                         <div class="article-placeholder">
@@ -218,32 +290,7 @@
                         <a href="https://medium.com/@gourikrishna173/exploratory-data-analysis-on-real-world-data-using-the-fred-api-4b1c12d1071d" class="article-link">Read Article</a>
                     </div>
                 </article>
-                <article class="article-card">
-                    <div class="article-image">
-                        <div class="article-placeholder">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                    </div>
-                    <div class="article-content">
-                        <h3>NA</h3>
-                        <p>Published in NeurIPS 2022</p>
-                        <span class="article-date">December 2022</span>
-                        <a href="#" class="article-link">Read Article</a>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-image">
-                        <div class="article-placeholder">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                    </div>
-                    <div class="article-content">
-                        <h3>NA</h3>
-                        <p>Published in ICML 2022</p>
-                        <span class="article-date">July 2022</span>
-                        <a href="#" class="article-link">Read Article</a>
-                    </div>
-                </article>
+
             </div>
         </div>
     </section>
@@ -251,7 +298,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">Feedbacks</h2>
+            <h2 class="section-title">Testimonials</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
@@ -306,7 +353,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Sarah Chen. All rights reserved.</p>
+            <p>&copy; 2025 Gouri Krishna R. All rights reserved.</p>
         </div>
     </footer>
 

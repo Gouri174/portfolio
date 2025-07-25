@@ -807,3 +807,115 @@ section {
     background: var(--accent-gradient) !important;
     color: var(--white) !important;
 } 
+
+/* Detailed project card styling */
+.project-card.detailed-card {
+    grid-column: 1 / -1; /* Make it span full width */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card.detailed-card .project-content {
+    padding: 30px;
+}
+
+.project-card.detailed-card h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.project-card.detailed-card .project-description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    padding: 0 20px;
+}
+
+.project-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.media-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover {
+    transform: translateY(-5px);
+}
+
+.media-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gif-demo {
+    height: 300px !important; /* Slightly taller for GIF */
+}
+
+.media-description {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-style: italic;
+    background: white;
+}
+
+.project-card.detailed-card .project-tech {
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.project-card.detailed-card .project-links {
+    justify-content: center;
+}
+
+.project-card.detailed-card .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white !important;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-card.detailed-card .project-link:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-media {
+        grid-template-columns: 1fr;
+    }
+    
+    .media-item img {
+        height: 200px;
+    }
+    
+    .gif-demo {
+        height: 250px !important;
+    }
+    
+    .project-card.detailed-card .project-content {
+        padding: 20px;
+    }
+}
